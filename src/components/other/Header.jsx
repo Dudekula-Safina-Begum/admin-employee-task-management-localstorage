@@ -6,7 +6,8 @@ import Login from '../Auth/Login'
 
 const Header = (props) => {
   // console.log(get)
-  // console.log(changeUser)
+  console.log(props.changeUser)
+  // console.log(props)
   
   // const username = data?.name || 'username';
   // console.log()
@@ -32,7 +33,7 @@ const Header = (props) => {
   return (
     <div className=''>
         <div className='w-full text-zinc-100  flex justify-between items-center  text-xl'>
-            <h1 className='font-medium'>hello <br /> <span className='font-semibold'>safina</span></h1>
+            <h1 className='font-medium'>Hello <br /> <span className='font-semibold'> welcome to your DashBoard</span></h1>
             <button onClick={logOutUser} className='font-medium rounded-md bg-red-500 p-3'>LOG-OUT</button>
         </div>
     </div>
